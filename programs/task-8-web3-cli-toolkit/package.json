@@ -1,0 +1,57 @@
+{
+  "name": "web3-cli-toolkit",
+  "version": "1.0.0",
+  "description": "Production-grade Web3 CLI toolkit for contract deployment, interaction, and monitoring",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "web3": "dist/cli.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "web3",
+    "ethereum",
+    "solidity",
+    "cli",
+    "smart-contracts",
+    "blockchain",
+    "ethers"
+  ],
+  "author": "Christopher Torres",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.8.0",
+    "commander": "^11.0.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "enquirer": "^2.4.1",
+    "ora": "^6.3.0",
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.2.0",
+    "ts-node": "^10.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "vitest": "^0.34.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torresjchristopher/Project-Excelsior-Blockchain-Web3.git"
+  }
+}
